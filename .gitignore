@@ -1,0 +1,31 @@
+```plaintext name=.gitignore
+# Nix build artifacts
+/result
+/build
+/store
+
+# Nix logs
+/nix.log
+
+# Nix garbage collection roots
+/nix-gcroots
+
+# Nix expressions
+*.drv
+
+# Nix shell environment
+/.envrc
+/.direnv
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Hidden files and folders
+.fseventsd
+.Spotlight-V100
+.Trashes

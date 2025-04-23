@@ -1,0 +1,29 @@
+# Normalize text files to use LF line endings
+* text=auto
+
+# Mark Nix configuration files as text, ensuring consistent treatment
+*.nix text
+
+# Treat shell scripts as text
+*.sh text eol=lf
+
+# Ignore changes to lock files in diffs
+*.lock diff=ignore
+
+# Treat binary files as binary, preventing diff and merge
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+
+# Explicitly ignore diff for JSON files
+*.json -diff
+
+# Ignore build artifacts
+/result export-ignore
+/build export-ignore
+/store export-ignore
+
+# Ignore macOS-specific files in archives
+.DS_Store export-ignore
+.AppleDouble export-ignore

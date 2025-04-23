@@ -37,12 +37,13 @@ in {
       show-recents = false;
       mru-spaces = false;
       persistent-apps = [
+       "${pkgs.vscode}/Applications/Visual Studio Code.app"
+       "${pkgs.google-chrome}/Applications/Google Chrome.app"
+       "${pkgs.kitty}/Applications/Kitty.app"
        "/System/Applications/Reminders.app"
        "/System/Applications/Calendar.app"
        "/System/Applications/App Store.app"
-       "/System/Applications/Utilities/Terminal.app"
        "/System/Applications/System Settings.app"
-       "/Applications/Safari.app"
       ];
       tilesize = 70;
       wvous-tl-corner = 2;  # top-left - Mission Control

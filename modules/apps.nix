@@ -5,15 +5,14 @@ export PATH=$HOME/bin:$PATH
   '';
 
   environment.systemPackages = with pkgs; [
-    #git
-    tree
-    #neovim 
-    #vscode
-    #colima
-    #docker
-    #docker-compose
+    git
+    tree 
+    vscode
+    kitty
+    colima
+    google-chrome    
   ];
 
-  #environment.variables.EDITOR = "nvim";
+  environment.variables.EDITOR = "vim";
   programs.zsh.enable = true;  
 }

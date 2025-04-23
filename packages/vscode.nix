@@ -20,16 +20,18 @@
         vscode-extensions.redhat.vscode-yaml
         vscode-extensions.jnoortheen.nix-ide
         vscode-extensions.hashicorp.terraform
-        vscode-extensions.github.copilot-chat
         vscode-extensions.ms-vscode.live-server
-        vscode-extensions.tamasfe.even-better-toml
         vscode-extensions.kddejong.vscode-cfn-lint
-        vscode-extensions.devsense.phptools-vscode
         vscode-extensions.editorconfig.editorconfig
         vscode-extensions.github.vscode-github-actions
-        vscode-extensions.jgclark.vscode-todo-highlight
-        vscode-extensions.streetsidesoftware.code-spell-checker
+        vscode-marketplace.monokai.theme-monokai-pro-vscode
+        vscode-marketplace.chadalen.vscode-jetbrains-icon-theme
+        vscode-marketplace.bmewburn.vscode-intelephense-client
+        vscode-marketplace.xdebug.php-debug
+        vscode-marketplace.bradlc.vscode-tailwindcss
+        vscode-marketplace.sonarsource.sonarlint-vscode
+        vscode-marketplace.quicktype.quicktype
+        vscode-marketplace.cweijan.dbclient-jdbc 
       ];
-
    }; 
 }

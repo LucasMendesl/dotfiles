@@ -14,6 +14,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    mac-app-util.url = "github:hraban/mac-app-util";
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   outputs = inputs @ {
@@ -21,6 +23,8 @@
     nix-darwin,
     nixpkgs,
     home-manager,
+    mac-app-util,
+    nix-vscode-extensions,
     ...
   }: let
     username = "lucas";
@@ -33,6 +37,7 @@
     darwinConfigurations."${hostname}" = nix-darwin.lib.darwinSystem {
         inherit system specialArgs;
         modules = [
+          mac-app-util.darwinModules.default  
           ./modules/core.nix
           ./modules/sys.nix
           ./modules/apps.nix
@@ -42,6 +47,10 @@
              home-manager.useGlobalPkgs = true;
              home-manager.useUserPackages = true;
              home-manager.extraSpecialArgs = specialArgs;
+
+             home-manager.sharedModules = [
+                mac-app-util.homeManagerModules.default
+             ];
 
              home-manager.users.${username} = import ./home.nix;
           }

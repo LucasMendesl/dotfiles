@@ -2,11 +2,10 @@
 
 {
   # import sub modules
-  #imports = [
-   #inputs.mac-app-util.homeManagerModules.default
-    #./packages/git.nix
-   #./packages/vscode.nix
-  #];
+  imports = [
+   ./packages/git.nix
+   ./packages/vscode.nix
+  ];
 
   # Home Manager needs a bit of information about you and the
   # paths it should manage.

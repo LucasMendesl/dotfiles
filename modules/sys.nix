@@ -39,7 +39,7 @@ in {
       persistent-apps = [
        "/System/Applications/Reminders.app"
        "/System/Applications/Calendar.app"
-       "/System/Applications/App%20Store.app"
+       "/System/Applications/App Store.app"
        "/System/Applications/Utilities/Terminal.app"
        "/System/Applications/System Settings.app"
        "/Applications/Safari.app"

@@ -18,8 +18,8 @@ else
 fi
 
 # WHEN WE HAVE THE CONFIGURATION SETTED UP, FETCH FROM GIT REPOSITORY
-# echo "fetching git dotfiles repository"
-# nix-shell -p git --run 'git clone https://github.com/${GITHUB_REPO_PATH} ${GIT_CLONE_LOCAL_PATH}'
+echo "fetching git dotfiles repository"
+nix-shell -p git --run 'git clone https://github.com/${GITHUB_REPO_PATH} ${GIT_CLONE_LOCAL_PATH}'
 
 echo "Installing nix darwin..."
 nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake "./#${HOSTNAME}"

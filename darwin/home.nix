@@ -3,10 +3,12 @@
 {
   # import sub modules
   imports = [
-   ./packages/core.nix
-   ./packages/zsh.nix
-   ./packages/git.nix
-   ./packages/vscode.nix
+   ../packages/oh-my-posh
+   ../packages/kitty.nix
+   ../packages/core.nix
+   ../packages/zsh.nix
+   ../packages/git.nix
+   ../packages/vscode.nix
   ];
 
   # Home Manager needs a bit of information about you and the

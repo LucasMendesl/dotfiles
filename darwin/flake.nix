@@ -40,7 +40,7 @@
         modules = [
           mac-app-util.darwinModules.default  
           ./modules/core.nix
-          ./modules/sys.nix
+          ./sys.nix
           ./modules/apps.nix
           ./modules/users.nix
           home-manager.darwinModules.home-manager 

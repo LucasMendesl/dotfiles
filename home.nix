@@ -3,6 +3,8 @@
 {
   # import sub modules
   imports = [
+   ./packages/core.nix
+   ./packages/zsh.nix
    ./packages/git.nix
    ./packages/vscode.nix
   ];

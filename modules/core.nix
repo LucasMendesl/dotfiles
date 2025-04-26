@@ -1,7 +1,10 @@
 { pkgs, inputs,  ... }: 
 
 let 
- nix-vscode-extensions = inputs.nix-vscode-extension;
+ nix-vscode-extensions = inputs.nix-vscode-extensions;
+ add-unstable-packages = final: prev: {
+    unstable = import inputs.nixpkgs-unstable { system = prev.system; };
+ };
 in {
   
   # enable flakes globally
@@ -10,7 +13,8 @@ in {
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   nixpkgs.overlays = [
-     inputs.nix-vscode-extensions.overlays.default
+     add-unstable-packages
+     nix-vscode-extensions.overlays.default
   ];
 
   # Auto upgrade nix package and the daemon service.

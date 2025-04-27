@@ -8,4 +8,9 @@
       docker
       docker-compose		
    ];
+
+   programs.fzf = {
+     enable = true;
+     enableZshIntegration = true;  
+   };
 }

@@ -1,8 +1,9 @@
-{ inputs, pkgs, ... }: 
+{ inputs, pkgs, hostname, ... }: 
 
 let 
  self = inputs.self;
 in {
+  system.defaults.smb.NetBIOSName = hostname;
   
   system.activationScripts.postUserActivation.text = ''
     # activateSettings -u will reload the settings from the database and apply

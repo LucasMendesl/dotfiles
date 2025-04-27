@@ -39,10 +39,10 @@
         inherit system specialArgs;
         modules = [
           mac-app-util.darwinModules.default  
-          ./modules/core.nix
+          ../modules/core.nix
           ./sys.nix
-          ./modules/apps.nix
-          ./modules/users.nix
+          ../modules/apps.nix
+          ../modules/users.nix
           home-manager.darwinModules.home-manager 
           {
              home-manager.useGlobalPkgs = true;

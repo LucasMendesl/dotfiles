@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }: 
+{ pkgs, lib, ... }:
 {
   home.packages = [ pkgs.zplug ];
 
@@ -37,12 +37,12 @@ export ZINIT_HOME="${pkgs.zinit}/share/zinit"
 
 # Source/Load zinit
 source "${pkgs.zinit}/share/zinit/zinit.zsh"
+autoload -Uz _zinit
+
 
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
-
-echo "Hello, $USER"
 
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
@@ -52,6 +52,8 @@ zinit light hlissner/zsh-autopair
 zinit light MichaelAquilina/zsh-you-should-use
 zinit light junegunn/fzf
 zinit light Aloxaf/fzf-tab
+
+#[[ -d ~/.cache/zinit/completions ]] || mkdir -p ~/.cache/zinit/completions
 
 # Add in snippets
 zinit snippet OMZL::git.zsh
@@ -67,7 +69,7 @@ zinit cdreplay -q
     
    completionInit = ''
 autoload -Uz compinit && compinit
-'';
+   '';
 
   };
 }

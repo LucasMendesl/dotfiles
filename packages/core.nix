@@ -5,6 +5,7 @@
       nil
       nixfmt-classic
 
+      unstable.devenv 	
       docker
       docker-compose		
    ];

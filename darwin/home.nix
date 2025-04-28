@@ -9,6 +9,7 @@
    ../packages/zsh.nix
    ../packages/git.nix
    ../packages/vscode.nix
+   ../packages/direnv.nix
   ];
 
   # Home Manager needs a bit of information about you and the

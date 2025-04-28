@@ -84,6 +84,7 @@
       ".env"
       ".direnv/"
       ".envrc"
+      "devenv.*"
       ".DS_Store"
     ];
 

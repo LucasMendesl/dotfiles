@@ -78,10 +78,6 @@ in {
         WebKitDeveloperExtras = true;
       };
       "com.apple.finder" = {
-        ShowExternalHardDrivesOnDesktop = true;
-        ShowHardDrivesOnDesktop = true;
-        ShowMountedServersOnDesktop = true;
-        ShowRemovableMediaOnDesktop = true;
         _FXSortFoldersFirst = true;
         
         # When performing a search, search the current folder by default

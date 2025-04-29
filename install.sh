@@ -1,5 +1,7 @@
 #!/bin/bash
 
+SYSTEM_ARCH=${SYSTEM_ARCH:-x86_64-darwin}
+USERMAIL=${USERMAIL:-mendes.lucas9498@gmail.com}
 GITHUB_REPO_PATH=${GITHUB_REPO_PATH:-lucasmendesl/dotfiles}
 HOSTNAME=${HOSTNAME:-$(scutil --get LocalHostName)}
 GIT_CLONE_LOCAL_PATH=${GIT_CLONE_LOCAL_PATH:-$HOME/.dotfiles}

@@ -28,10 +28,10 @@
     nix-vscode-extensions,
     ...
   }: let
-    username = "lucas";
-    useremail = "mendes.lucas9498@gmail.com";
-    system = "x86_64-darwin"; # aarch64-darwin or x86_64-darwin
-    hostname = "mbp-i5-lucas";
+    username = builtins.getEnv "USER";
+    useremail = builtins.getEnv "USERMAIL";
+    system = builtins.getEnv "SYSTEM_ARCH"; #x86_64-darwin
+    hostname = builtins.getEnv "HOSTNAME";
     specialArgs = { inherit inputs username useremail hostname; };
  in {
       

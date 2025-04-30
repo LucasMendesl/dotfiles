@@ -5,6 +5,8 @@
      themeFile = "Molokai";
 
      settings = {
+       font_size = 14;
+       font_family = "Hack Nerd Font Regular";
        background_opacity = 0.9;
        background_blur = 22;
      };

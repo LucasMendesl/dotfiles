@@ -4,10 +4,6 @@
    home.packages = with pkgs; [
       nil
       nixfmt-classic
-
-      unstable.devenv 	
-      docker
-      docker-compose		
    ];
 
    programs.fzf = {

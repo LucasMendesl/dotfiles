@@ -18,6 +18,11 @@
       ignoreSpace = true;    
     };
 
+    shellAliases = {
+       envdev = "nix develop ./darwin --command zsh";
+       switch = "darwin-rebuild switch --flake ./darwin#mbp-i5-lucas";
+    };
+
     defaultKeymap = "emacs";
 
     initExtra = ''

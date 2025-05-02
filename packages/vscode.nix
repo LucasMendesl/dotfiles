@@ -36,6 +36,12 @@
       vscode-marketplace.sonarsource.sonarlint-vscode
       vscode-marketplace.quicktype.quicktype
       vscode-marketplace.cweijan.dbclient-jdbc
+      vscode-marketplace.github.copilot-chat
+      vscode-marketplace.ms-azuretools.vscode-docker
+      vscode-marketplace.eamodio.gitlens
+      vscode-marketplace.hbenl.vscode-test-explorer
+      vscode-marketplace.donjayamanne.githistory
+      vscode-marketplace.wayou.vscode-todo-highlight
     ];
   };
 }

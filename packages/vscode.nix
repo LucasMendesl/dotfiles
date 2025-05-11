@@ -14,6 +14,8 @@
       "terminal.external.osxExec" = "Kitty.app";
       "terminal.integrated.defaultProfile.osx" = "zsh";
       "go.toolsManagment.autoUpdate" = true;
+      "database-client.autoSync" = true;
+      "github.copilot.nextEditSuggestions.enabled" = true;
     };
 
     extensions = with pkgs; [
@@ -21,7 +23,6 @@
       vscode-extensions.hashicorp.hcl
       vscode-extensions.github.copilot
       vscode-extensions.ms-python.python
-      vscode-extensions.redhat.vscode-yaml
       vscode-extensions.jnoortheen.nix-ide
       vscode-extensions.hashicorp.terraform
       vscode-extensions.ms-vscode.live-server
@@ -42,6 +43,8 @@
       vscode-marketplace.hbenl.vscode-test-explorer
       vscode-marketplace.donjayamanne.githistory
       vscode-marketplace.wayou.vscode-todo-highlight
+      vscode-marketplace.cweijan.vscode-mysql-client2
+      vscode-marketplace.postman.postman-for-vscode
     ];
   };
 }

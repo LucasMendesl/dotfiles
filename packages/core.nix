@@ -20,7 +20,8 @@ in {
     unstable.nixfmt-classic
     #unstable.oci-cli
     #unstable.terraform
-    unstable.nodejs_23
+    unstable.nodejs_24
+    unstable.uv
     unstable.jq
     unstable.go
     unstable.gotools

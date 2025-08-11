@@ -16,6 +16,7 @@
       "go.toolsManagment.autoUpdate" = true;
       "database-client.autoSync" = true;
       "github.copilot.nextEditSuggestions.enabled" = true;
+      "chat.instructionsFilesLocations" = { ".github/instructions" = true; };
     };
 
     extensions = with pkgs; [
@@ -26,7 +27,6 @@
       vscode-extensions.jnoortheen.nix-ide
       vscode-extensions.hashicorp.terraform
       vscode-extensions.ms-vscode.live-server
-      vscode-extensions.kddejong.vscode-cfn-lint
       vscode-extensions.editorconfig.editorconfig
       vscode-extensions.github.vscode-github-actions
       vscode-marketplace.monokai.theme-monokai-pro-vscode
@@ -45,6 +45,8 @@
       vscode-marketplace.wayou.vscode-todo-highlight
       vscode-marketplace.cweijan.vscode-mysql-client2
       vscode-marketplace.postman.postman-for-vscode
+      vscode-marketplace.anthropic.claude-code
+      vscode-marketplace.google.geminicodeassist
     ];
   };
 }

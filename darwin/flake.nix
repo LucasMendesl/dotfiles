@@ -26,10 +26,8 @@
       useremail = "mendes.lucas9498@gmail.com";
       system = "x86_64-darwin";
       hostname = "mbp-i5-lucas";
-      specialArgs = { inherit inputs username useremail hostname; };
+      specialArgs = { inherit inputs username useremail hostname system; };
     in {
-      devShells.x86_64-darwin.default = import ../shells/golang.nix { inherit inputs system; };
-
       darwinConfigurations."${hostname}" = nix-darwin.lib.darwinSystem {
         inherit system specialArgs;
         modules = [
